@@ -1,5 +1,6 @@
 resource "kubernetes_config_map" "aws_auth" {
-  count = var.create_eks ? 1 : 0
+  #count = var.create_eks ? 1 : 0
+  count  = 0
 
   metadata {
     name      = "aws-auth"
